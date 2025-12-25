@@ -4,7 +4,7 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-export default defineConfig({
+const config = ({
   testDir: './tests',
     timeout: 50 * 1000,
       expect: {
@@ -12,10 +12,13 @@ export default defineConfig({
   },
  
   use: {
+    browserName: 'chromium'
     
 
   },
 
   
 });
+//laptop1
+module.exports = config;
 
