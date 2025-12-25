@@ -8,7 +8,7 @@ test('First', async ({browser})=>
     console.log(await page.title());
 });
 
-test('Second', async ({page})=> 
+test.only('Second', async ({page})=> 
 {
     await page.goto('https://np.tpsmartsol.com');
     console.log(await page.title());
